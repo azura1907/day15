@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }   
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        width: 500px;
+        border: 1px solid #000;
+        padding: 10px 20px;
+
+    }
+       
+    .todo{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- template lúc nào cũng sẽ để ở phần bắt đầu của body -->
+    <template id = "templateLi">
+        <li class="todo">
+            <div class="todo-left">
+                <input type="checkbox" name="" id="">
+                <span>Abc</span>
+            </div>
+            <div class="todo-right">
+                <span>
+                    Close
+                </span>
+            </div>
+        </li>
+    </template>
+
+    <!-- combo box -->
+    <!-- <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="hyundai">Hyundai</option>
+    </select>
+
+
+    <select name="date" id="date">
+
+    </select> -->
+
+    <div class="box">
+        <p>Todo list</p>
+        <div class="input-form">
+            <input type="text" name="" id="todo-input">
+            <button id = "addBtn">Add</button>
+        </div>
+        <ul class="todo-list">
+        
+        </ul>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

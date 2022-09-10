@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .title.active {
+            color: red;
+        }
+
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <p id = "count">Count: 0</p>
+    <button id = "countBtn">Count +</button>
+
+    <ul class="tab-titles">
+        <li class="title active">Tab 1</li>
+        <li class="title">Tab 2</li>
+        <li class="title">Tab 3</li>
+    </ul>
+
+    <ul class="contents">
+        <li class="content active">Content 1</li>
+        <li class="content">Content 2</li>
+        <li class="content">Content 3</li>
+    </ul>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
